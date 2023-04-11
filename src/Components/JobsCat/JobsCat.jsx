@@ -8,7 +8,6 @@ const JobsCat = () => {
         .then(res=>res.json())
         .then(data=>setJobs(data))
     },[])
-    console.log(jobs);
     
     return (
         <div  className='text-center mx-10 px-8'>

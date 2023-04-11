@@ -1,6 +1,7 @@
 import React from 'react';
 import pic from '../../assets/All Images/P3OLGJ1.png';
 import JobsCat from '../JobsCat/JobsCat';
+import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             </div>
 
             <JobsCat></JobsCat>
+            <FeaturedJobs></FeaturedJobs>
         </div>
 
     );
