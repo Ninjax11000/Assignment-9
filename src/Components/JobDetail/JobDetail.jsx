@@ -35,7 +35,7 @@ const JobDetail = () => {
             </div>
 
 
-            <div className='md:flex my-8 py-8 mx-8 px-8'>
+            <div className='md:flex my-8 py-8 mx-6 gap-2 ps-8'>
                 {/* description */}
                 <div className='w-2/3 my-2'>
                     <p className='my-2'><span className='font-bold' >Job Description: </span>{description}</p>
