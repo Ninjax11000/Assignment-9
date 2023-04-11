@@ -23,7 +23,7 @@ const JobDetail = () => {
 
     const detail = details.find(detail => detail.id === lastsegment);
     console.log(detail);
-    const { description, responsibility, educational_Requirements, experiences, salary, title, phone, email, location } = detail;
+    const { description, responsibility, educational_Requirements, experiences, salary, title, phone, email, location } = detail ||{};
 
     return (
         <div >
