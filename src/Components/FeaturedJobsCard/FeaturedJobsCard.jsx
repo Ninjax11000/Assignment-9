@@ -1,6 +1,7 @@
 import React from 'react';
 import salary_logo from '../../assets/Icons/Frame.png';
 import location_logo from '../../assets/Icons/Frame-4.png';
+import { Link } from 'react-router-dom';
 
 const FeaturedJobsCard = ({ fjob }) => {
     return (
@@ -25,8 +26,9 @@ const FeaturedJobsCard = ({ fjob }) => {
              
             
             </div>
+            <Link to={`/jobdetails/${fjob.id}`}><button className='bg-indigo-500 rounded-md py-2 px-2 mt-2 text-white font-bold text-lg'>View Details</button></Link>
 
-            <button className='bg-indigo-500 rounded-md py-2 px-2 mt-2 text-white font-bold text-lg'>View Details</button>
+            
            </div>
         </div>
     );

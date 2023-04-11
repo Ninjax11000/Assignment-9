@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='bg-slate-100'>
+        <div className='bg-slate-50'>
             <nav className='md:flex justify-between mx-10 px-8  items-center py-4  '>
                 <Link to='/' className='text-3xl font-extrabold'>BuildCareer</Link>
                 <div className='flex gap-4 my-2'>
