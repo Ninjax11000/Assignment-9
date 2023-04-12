@@ -13,6 +13,7 @@ import Ajobs from './Components/Ajobs/Ajobs';
 import Blog from './Components/Blog/Blog';
 import JobDetail from './Components/JobDetail/JobDetail';
 import appliedJobLoader from './loaders/appliedJobLoader';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path:'*',
-        element: <div>404</div>
+        element: <ErrorPage></ErrorPage>
       }
     ]
   },
