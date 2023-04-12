@@ -1,6 +1,6 @@
 import React from 'react';
-import salary_logo from '../../assets/Icons/Frame.png';
-import location_logo from '../../assets/Icons/Frame-4.png';
+import salary_logo from '/Frame.png';
+import location_logo from '/Frame-4.png';
 import { Link } from 'react-router-dom';
 
 const Ajob = ({ job , onsite, remote}) => {

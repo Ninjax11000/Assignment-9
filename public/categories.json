@@ -2,28 +2,28 @@
     {
     
         "category": "Account & Finance",
-        "logo": "../src/assets/Icons/accounts 1.png",
+        "logo": "/accounts 1.png",
         "available": 300
        
     },
     {
     
         "category": "Creative Design",
-        "logo": "../src/assets/Icons/business 1.png",
+        "logo": "/business 1.png",
         "available": 150
        
     },
     {
     
         "category": "Marketing and Sales",
-        "logo": "../src/assets/Icons/social-media 1.png",
+        "logo": "/social-media 1.png",
         "available": 150
        
     },
     {
     
         "category": "Engineering Job",
-        "logo": "../src/assets/Icons/chip 1.png",
+        "logo": "/chip 1.png",
         "available": 300
        
     }

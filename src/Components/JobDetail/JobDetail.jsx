@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import banner from '../../assets/All Images/Vector.png';
-import sPic from '../../assets/Icons/Frame.png';
-import jPic from '../../assets/Icons/Frame-1.png';
-import PPic from '../../assets/Icons/Frame-2.png';
-import EPic from '../../assets/Icons/Frame-3.png';
-import APic from '../../assets/Icons/Frame-4.png';
+import banner from '/Vector.png';
+import sPic from '/Frame.png';
+import jPic from '/Frame-1.png';
+import PPic from '/Frame-2.png';
+import EPic from '/Frame-3.png';
+import APic from '/Frame-4.png';
 import { addToDb } from '../../Utilities/Fakedb';
 
 
@@ -13,7 +13,7 @@ const JobDetail = () => {
     const [details, setDetails] = useState([]);
     let url;
     useEffect(() => {
-        fetch('../../../public/Jobs.json')
+        fetch('/Jobs.json')
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [])

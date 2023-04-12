@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getShoppingCart } from '../../Utilities/Fakedb';
 import { useLoaderData } from 'react-router-dom';
-import banner from '../../assets/All Images/Vector.png';
+import banner from '/Vector.png';
 import Ajob from '../Ajob/Ajob';
 
 const Ajobs = () => {
