@@ -3,10 +3,12 @@ import salary_logo from '../../assets/Icons/Frame.png';
 import location_logo from '../../assets/Icons/Frame-4.png';
 import { Link } from 'react-router-dom';
 
-const Ajob = ({ job }) => {
+const Ajob = ({ job , onsite, remote}) => {
+   
     return (
 
-        <div className='border-solid border-2 border-slate-400 rounded-lg text-left my-2'>
+        <div  className={(!onsite &&  job.type==='Onsite'? 'hidden':'') || (!remote && job.type==='Remote'?'hidden':'')}>
+            <div className='border-solid border-2 border-slate-400 rounded-lg text-left my-2'>
             <div className='ps-4 py-2 my-4 md:flex justify-between items-center'>
                 <div className='flex'>
                     <div className='w-1/3 me-2 bg-slate-200 rounded-md '><img className='mt-16 mx-auto w-3/4 h-1/3' src={job.logo} alt="" /></div>
@@ -39,6 +41,7 @@ const Ajob = ({ job }) => {
             </div>
         </div>
 
+        </div>
     );
 };
 

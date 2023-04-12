@@ -39,6 +39,10 @@ const router = createBrowserRouter([
         path:'jobdetails/:id',
         element:<JobDetail></JobDetail>,
         loader: ()=> fetch('../public/Jobs.json')
+      },
+      {
+        path:'*',
+        element: <div>404</div>
       }
     ]
   },
