@@ -5,6 +5,7 @@ import jPic from '../../assets/Icons/Frame-1.png';
 import PPic from '../../assets/Icons/Frame-2.png';
 import EPic from '../../assets/Icons/Frame-3.png';
 import APic from '../../assets/Icons/Frame-4.png';
+import { addToDb } from '../../Utilities/Fakedb';
 
 
 
@@ -20,9 +21,10 @@ const JobDetail = () => {
     const array = url.split('/');
 
     const lastsegment = (array[array.length - 1]);
+    
 
     const detail = details.find(detail => detail.id === lastsegment);
-    console.log(detail);
+    
     const { description, responsibility, educational_Requirements, experiences, salary, title, phone, email, location } = detail ||{};
 
     return (
@@ -87,7 +89,7 @@ const JobDetail = () => {
                     </div>
                     
                 </div>
-                <button className='bg-indigo-500 rounded-md py-2 px-2 mt-2 text-white font-bold text-lg w-full'>Apply now</button>
+                <button className='bg-indigo-500 rounded-md py-2 px-2 mt-2 text-white font-bold text-lg w-full' onClick={()=>addToDb(lastsegment)}>Apply now</button>
                 </div>
                 
 
